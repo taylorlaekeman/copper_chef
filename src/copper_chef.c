@@ -4,25 +4,15 @@
 
 const int COOKING_TEMPERATURE = 325, STABLE_THRESHOLD = 10, WITH_STABILIZATION = 1, WITHOUT_STABILIZATION = 0;
 
-int readTargetTemperature() {
-  return 57;
-}
+int readTargetTemperature() {/* not yet implemented */}
 
-int senseTemperature() {
-  return 250;
-}
+int senseTemperature() {/* not yet implemented */}
 
-void signalPanTooCold() {
+void signalPanTooCold() {/* not yet implemented */}
 
-}
+void signalPanTooHot() {/* not yet implemented */}
 
-void signalPanTooHot() {
-
-}
-
-void signalPanJustRight() {
-
-}
+void signalPanJustRight() {/* not yet implemented */}
 
 void waitForTemperature(int targetTemperature, int withStabilization) {
   int temperature = 0, stableCount = 0, stableThreshold = (withStabilization) ? STABLE_THRESHOLD : 1;
@@ -40,21 +30,13 @@ void waitForTemperature(int targetTemperature, int withStabilization) {
   }
 }
 
-void lowerSteak() {
+void lowerSteak() {/* not yet implemented */}
 
-}
+void raiseSteak() {/* not yet implemented */}
 
-void raiseSteak() {
+void rotateSteak() {/* not yet implemented */}
 
-}
-
-void rotateSteak() {
-
-}
-
-void signalCompletion() {
-
-}
+void signalCompletion() {/* not yet implemented */}
 
 void main(int argc, char *argv[]) {
   int targetTemperature = readTargetTemperature(), startTemperature;
